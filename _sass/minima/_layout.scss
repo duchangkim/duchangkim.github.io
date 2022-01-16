@@ -231,6 +231,7 @@
 }
 
 .post-link {
+  width: fit-content;
   display: block;
   @include relative-font-size(1.5);
 }
