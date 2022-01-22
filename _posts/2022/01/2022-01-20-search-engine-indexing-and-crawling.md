@@ -19,7 +19,7 @@ tags: [web]
 ## 크롤링(Crawling)
 웹페이지의 데이터들을 수집하기 위해 가장 먼저 하는 일이 '크롤링'입니다. 구글은 스파이더라고 부르는 소프트웨어가 웹페이지 몇 개를 가져오는 것으로 시작해서 그 페이지에서 데이터를 수집하고, 페이지에 연결된 링크를 따라갑니다. 새로 가리킨 페이지에서도 데이터를 수집합니다. 이 과정을 반복하면서 데이터를 수집하게 됩니다.  
 
-https://lyb1495.tistory.com/17 👈크롤러에 관한 자세한 설명은 이 글을 참고하세요.
+[https://lyb1495.tistory.com/17](https://lyb1495.tistory.com/17) 👈크롤러에 관한 자세한 설명은 이 글을 참고하세요.
 
 ## 인덱싱(Indexing)
 크롤러(스파이더)가 찾아 가져온 웹사이트의 정보를 구글 검색 색인에 저장하는 것을 뜻합니다. 가져온 데이터는 구글의 분류법에 따라 분류해 저장합니다. 끝없이 커지고있는 도서관과 같다고 볼 수 있습니다.
@@ -29,6 +29,6 @@ https://lyb1495.tistory.com/17 👈크롤러에 관한 자세한 설명은 이 �
 구글에서 정한 200가지가 넘는 질문을 거칩니다. 그리고 그것을 종합하여 페이지의 전반적인 평점을 매기고 이에 따라 검색결과를 내보내게 됩니다.
 
 
-ref
-https://www.google.com/intl/ko/search/howsearchworks/crawling-indexing/
-https://hypemarc.com/seo-crawling-indexing/
+### ref  
+[https://www.google.com/intl/ko/search/howsearchworks/crawling-indexing/](https://www.google.com/intl/ko/search/howsearchworks/crawling-indexing/)
+[https://hypemarc.com/seo-crawling-indexing/](https://hypemarc.com/seo-crawling-indexing/)
