@@ -3,9 +3,10 @@ layout: post
 title: Search engine indexing and crawling
 category: test
 created_date: 2022-01-20
-modified_date: 2022-01-22
+modified_date: 2022-01-23
 author: duchangkim
-tags: [web]
+tags: [web, search]
+search_keyword: [검색엔진, 검색, 구글, 크롤링, 크롤러, 인덱싱]
 ---
 
 ***
