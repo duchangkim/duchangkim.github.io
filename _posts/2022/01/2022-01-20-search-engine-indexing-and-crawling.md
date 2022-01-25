@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Search engine indexing and crawling
-category: test
+category: web
 created_date: 2022-01-20
 modified_date: 2022-01-23
 author: duchangkim
