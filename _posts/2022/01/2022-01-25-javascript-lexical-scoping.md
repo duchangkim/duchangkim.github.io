@@ -6,7 +6,7 @@ created_date: 2022-01-25
 modified_date: 2022-01-25
 author: duchangkim
 tags: [js]
-search_keyword: [렉시컬 스코핑]
+search_keyword: [렉시컬 스코핑, 정적 스코프, 렉시컬 스코프]
 ---
 
 ***
