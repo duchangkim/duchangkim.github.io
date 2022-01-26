@@ -16,7 +16,7 @@ search_keyword: [렉시컬 스코핑]
 
 # Lexical scoping
 
-```javascript
+```js
 function init() {
 	var name = 'kjsp';
 
@@ -32,7 +32,7 @@ init();
 
 위 코드도 Lexical scoping의 한 예입니다. 다른 예도 한번 살펴봅시다.
 
-```javascript
+```js
 var name = 'kjsp';
 
 function displayName() {
