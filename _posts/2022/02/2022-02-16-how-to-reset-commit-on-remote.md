@@ -36,14 +36,14 @@ A.js와 B.js를 수정하고 배포하였는데(원격 저장소에 올라간 �
 git reset HEAD^
 
 # 리모트 저장소에 강제로 push 합니다
-git push -f origin branch
+git push -f [<remote name>] [<branch name>]
 
 ## B.js만 add, commit합니다
 git add B.js
 git commit -m "fix"
 
 # 다시 리모트 저장소에 push 합니다
-git push origin branch
+git push [<remote name>] [<branch name>]
 ```
 위 과정을 마치면 A.js만 이전으로 돌린 상태가 됩니다.
 <br>
