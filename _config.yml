@@ -1,10 +1,10 @@
 lang: ko
-title: Today I Learned (Wiki)
+title: Duchang's DEV WIKI
 author:
   name: duchangkim
   email: duchang.dev@gmail.com
 description: > # this means to ignore newlines until "show_excerpts:"
-  개발 관련 지식을 공부하고 쌓아두는 백과사전 입니다. 모든 글은 미완성일 수 있으며, 계속해서 업데이트 됩니다.
+  개발 관련 지식을 공부하고 쌓아두는 위키 입니다. 모든 글은 미완성일 수 있으며, 계속해서 업데이트 됩니다.
 show_excerpts: false # set to true to show excerpts on the homepage
 
 # Minima date format
