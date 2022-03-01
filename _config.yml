@@ -35,3 +35,6 @@ plugins:
 # syntax highlight
 markdown: kramdown
 highlighter: rouge
+
+kramdown:
+  auto_ids: true
