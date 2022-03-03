@@ -3,7 +3,7 @@ layout: post
 title: 타입스크립트 - 유틸리티 타입 (TypeScript - utility types)
 category: TS
 created_date: 2022-03-01
-modified_date: 2022-03-01
+modified_date: 2022-03-02
 author: duchangkim
 tags: [ts]
 search_keyword: [ts, type]
@@ -15,7 +15,7 @@ search_keyword: [ts, type]
 
 ## 유틸리티 타입 종류
 - [`Partial<T>`](#partial)
-- [`Readonly<T>`](#readonly) - To be updated
+- [`Readonly<T>`](#readonly)
 - [`Record<K,T>`](#record) - To be updated
 - [`Pick<T,K>`](#pick) - To be updated
 - [`Omit<T,K>`](#omit) - To be updated
@@ -34,11 +34,9 @@ search_keyword: [ts, type]
 ## `Partial<T>`
 {: #partial}
 
-파셜 타입은
+Partial(파셜) 타입은
 - `T`의 모든 프로퍼티를 선택적으로 만드는 타입을 구성합니다. 
 - 주어진 타입의 모든 하위 타입 집합을 나타내는 타입을 반환합니다.
-
-<br />
 
 **예제**
 ```typescript
@@ -100,3 +98,54 @@ const updatedAeong: User = updateUser2(aeong, {
 });
 ```
 
+[Partial 예제](https://stackblitz.com/edit/typescript-mfz6zi?file=PartialType.ts)
+
+
+***
+
+## `Readonly<T>`
+{: #readonly}
+
+Redonly(리드온리) 타입은
+- `T`의 모든 프로퍼티를 읽기전용으로 설정한 타입을 구성합니다.
+- 생성된 타입의 프로퍼티는 값을 재할당할 수 없습니다.
+
+**예제**
+```typescript
+interface Cat {
+  name: string;
+  like: string;
+  age: number;
+}
+
+const kuku: Readonly<Cat> = {
+  name: 'kuku',
+  like: 'box',
+  age: 3,
+};
+
+// error! 읽기전용 객체이므로 재할당 불가능
+kuku.like = 'you';
+```
+
+<br />
+
+아래와 같이 사용 가능합니다. (freeze가 반환한 객체에 값을 재할당 하려는 경우를 막는 용도)
+```typescript
+function freeze<T>(obj): Readonly<T> {
+  return Object.freeze(obj);
+}
+
+const aeong: Cat = {
+  name: 'aeong',
+  like: 'catnip',
+  age: 5,
+};
+
+const readonlyAeong = freeze<Cat>(aeong);
+readonlyAeong.age = 6;
+```
+
+[Readonly<T> 예제](https://stackblitz.com/edit/typescript-mfz6zi?file=Readonly.ts)
+
+***
