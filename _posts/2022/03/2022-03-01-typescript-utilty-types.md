@@ -16,7 +16,7 @@ search_keyword: [ts, type]
 ## 유틸리티 타입 종류
 - [`Partial<T>`](#partial)
 - [`Readonly<T>`](#readonly)
-- [`Record<K,T>`](#record) - To be updated
+- [`Record<K,T>`](#record)
 - [`Pick<T,K>`](#pick) - To be updated
 - [`Omit<T,K>`](#omit) - To be updated
 - [`Exclude<T,U>`](#exclude) - To be updated
@@ -146,6 +146,40 @@ const readonlyAeong = freeze<Cat>(aeong);
 readonlyAeong.age = 6;
 ```
 
-[Readonly<T> 예제](https://stackblitz.com/edit/typescript-mfz6zi?file=Readonly.ts)
+[Readonly 예제](https://stackblitz.com/edit/typescript-mfz6zi?file=Readonly.ts)
 
 ***
+
+## `Record<K, T>`
+{: #record}
+
+Record(레코드) 타입은
+- 프로퍼티 키가 `K`타입, 값이 `T`타입인 타입을 구성합니다.
+- `Record`타입은 타입의 프로퍼티들을 다른 타입에 매핑시키는 데 사용할 수 있습니다.
+
+**예제**
+```typescript
+interface PageInfo {
+  title: string;
+  backgroundColor: string;
+}
+
+type Page = 'home' | 'about' | 'posts';
+
+const pages: Record<Page, PageInfo> = {
+  home: { // type Page의 값
+    title: 'Home', // interface PageInfo의 title
+    backgroundColor: 'black', // interface PageInfo의 backgroundColor
+  },
+  about: {
+    title: 'About',
+    backgroundColor: 'red',
+  },
+  posts: {
+    title: 'Posts',
+    backgroundColor: 'gray',
+  },
+};
+```
+
+[Record 예제](https://stackblitz.com/edit/typescript-mfz6zi?file=Record.ts)
