@@ -3,7 +3,7 @@ layout: post
 title: 타입스크립트 - 유틸리티 타입 (TypeScript - utility types)
 category: TS
 created_date: 2022-03-01
-modified_date: 2022-03-02
+modified_date: 2022-03-07
 author: duchangkim
 tags: [ts]
 search_keyword: [ts, type]
