@@ -189,7 +189,7 @@ const pages: Record<Page, PageInfo> = {
 {: #pick}
 
 Pick(픽) 타입은
-- 타입 T의 프로퍼티 K의 집합을 선택해서 타입을 구성합니다.
+- 타입 `T`의 프로퍼티 `K`의 집합을 선택해서 타입을 구성합니다.
 
 ```typescript
 interface Post {
