@@ -3,10 +3,10 @@ layout: post
 title: 타입스크립트 - 유틸리티 타입 (TypeScript - utility types)
 category: TS
 created_date: 2022-03-01
-modified_date: 2022-03-07
+modified_date: 2022-03-08
 author: duchangkim
 tags: [ts]
-search_keyword: [ts, type]
+search_keyword: [ts, type, utility]
 ---
 ***
 
@@ -17,7 +17,7 @@ search_keyword: [ts, type]
 - [`Partial<T>`](#partial)
 - [`Readonly<T>`](#readonly)
 - [`Record<K,T>`](#record)
-- [`Pick<T,K>`](#pick) - To be updated
+- [`Pick<T,K>`](#pick)
 - [`Omit<T,K>`](#omit) - To be updated
 - [`Exclude<T,U>`](#exclude) - To be updated
 - [`Extract<T,U>`](#extract) - To be updated
@@ -99,7 +99,6 @@ const updatedAeong: User = updateUser2(aeong, {
 ```
 
 [Partial 예제](https://stackblitz.com/edit/typescript-mfz6zi?file=PartialType.ts)
-
 
 ***
 
@@ -183,3 +182,33 @@ const pages: Record<Page, PageInfo> = {
 ```
 
 [Record 예제](https://stackblitz.com/edit/typescript-mfz6zi?file=Record.ts)
+
+***
+
+## `Pick<T, K>`
+{: #pick}
+
+Pick(픽) 타입은
+- 타입 T의 프로퍼티 K의 집합을 선택해서 타입을 구성합니다.
+
+```typescript
+interface Post {
+  title: string;
+  tags: string[];
+  content: string;
+  index: number;
+  description: string;
+}
+
+// Post 인터페이스에서 title, tags, description 프로퍼티만 골라와서 타입을 구성합니다.
+type PostPreview = Pick<Post, 'title' | 'tags' | 'description'>;
+
+const postPreview: PostPreview = {
+  title: '야옹이는 어떻게 야옹할까?',
+  tags: ['고양이', '야옹'],
+  description:
+    '야옹이는 어떻게 야옹할까에 대한 글 입니다. 이 글을 읽으시려면 드루오세요',
+};
+```
+
+[Pick 예제](https://stackblitz.com/edit/typescript-mfz6zi?file=Pick.ts)
