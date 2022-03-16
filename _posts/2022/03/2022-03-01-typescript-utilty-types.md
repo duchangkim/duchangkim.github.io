@@ -18,7 +18,7 @@ search_keyword: [ts, type, utility]
 - [`Readonly<T>`](#readonly)
 - [`Record<K,T>`](#record)
 - [`Pick<T,K>`](#pick)
-- [`Omit<T,K>`](#omit) - To be updated
+- [`Omit<T,K>`](#omit)
 - [`Exclude<T,U>`](#exclude) - To be updated
 - [`Extract<T,U>`](#extract) - To be updated
 - [`NonNullable<T>`](#nonnullable) - To be updated
@@ -190,6 +190,7 @@ const pages: Record<Page, PageInfo> = {
 
 Pick(픽) 타입은
 - 타입 `T`의 프로퍼티 `K`의 집합을 선택해서 타입을 구성합니다.
+- `Omit<T, K>`과 반대입니다.
 
 ```typescript
 interface Post {
@@ -212,3 +213,34 @@ const postPreview: PostPreview = {
 ```
 
 [Pick 예제](https://stackblitz.com/edit/typescript-mfz6zi?file=Pick.ts)
+
+***
+
+## `Omit<T, K>`
+{: #omit}
+
+Omit(오밋) 타입은
+- `T`타입의 `K`프로퍼티를 제거한 나머지로 타입을 구성합니다.
+- `Pick<T, K>`과 반대입니다.
+
+```typescript
+interface Post {
+  title: string;
+  tags: string[];
+  content: string;
+  index: number;
+  description: string;
+}
+
+// Post 인터페이스에서 content, index 프로퍼티를 제외한 나머지로 타입을 구성합니다.
+type PostPreview = Omit<Post, 'content' | 'index'>;
+
+const postPreview: PostPreview = {
+  title: '야옹이는 어떻게 야옹할까?',
+  tags: ['고양이', '야옹'],
+  description:
+    '야옹이는 어떻게 야옹할까에 대한 글 입니다. 이 글을 읽으시려면 드루오세요',
+};
+```
+
+[Omit 예제](https://stackblitz.com/edit/typescript-mfz6zi?file=Omit.ts)
