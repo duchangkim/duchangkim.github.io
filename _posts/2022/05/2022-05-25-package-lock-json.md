@@ -13,7 +13,7 @@ search_keyword: [npm]
 회사에서 "lockfile은 왜 github에 올려요?" 라는 질문에 "남들이 올려서 그냥 올리는건데요??" 라고 답변은 했지만, 뭔가 이유가 있지 않을까 해서 찾아보게 되었습니다.
 
 ## package-lock.json파일이란?
-`package-lock.json`은 npm이 `node_modules` 트리 또는 `pacakge.json`을 수정하는 모든 작업에 대해서 자동으로 생성되는 파일입니다. 종속성 업데이트에 관계없이 후속 설치에서 동일한 `node_modules` 트리를 생성할 수 있도록 정확한 트리를 설명합니다.
+`package-lock.json`은 npm이 `node_modules` 트리 또는 `package.json`을 수정하는 모든 작업에 대해서 자동으로 생성되는 파일입니다. 종속성 업데이트에 관계없이 후속 설치에서 동일한 `node_modules` 트리를 생성할 수 있도록 정확한 트리를 설명합니다.
 
 `package-lock.json`은 소스 저장소에 커밋하기 위한 것이며 다양한 용도로 사용됩니다.
 
