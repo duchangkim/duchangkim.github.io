@@ -1,1 +1,3 @@
-<a href="https://duchangkim.github.io" target="_blank">Duchang's DEV wiki</a>
+`cmd + click` or `ctrl + click`
+
+👉 <a href="https://duchangkim.github.io">Duchang's DEV wiki</a> 👈 
