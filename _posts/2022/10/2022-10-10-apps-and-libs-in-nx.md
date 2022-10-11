@@ -3,7 +3,7 @@ layout: post
 title: Nx에서 apps와 libs로 패키지를 구분하는 이유
 category: monorepo
 created_date: 2022-10-10
-modified_date: 2022-10-10
+modified_date: 2022-10-11
 author: duchangkim
 tags: [monorepo, nx]
 search_keyword: [monorepo, nx]
@@ -43,3 +43,6 @@ apps와 libs 구분은 보다 모듈화된 아키텍처를 가질 수 있도록 
 **publish하지 않는 라이브러리**도 libs(package)의 프로젝트로 만들어도 괜찮습니다.
 
 또한, **publish 가능한 라이브러리**도 만들 수 있습니다.
+
+# 참고 문서
+[applications-and-libraries](https://nx.dev/more-concepts/applications-and-libraries)
